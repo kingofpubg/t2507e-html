@@ -1,0 +1,20 @@
+
+h1{
+    /* chỉ định thuộc tính cho phần tử h1 */
+    color: red; /* thuộc tính: gia trị */
+}
+p{
+    /* chỉ định thuộc tính cho phần tử p */
+    color:#11c711; /* mã màu dạng hex */
+    font-size: 15px; /* kích thước chữ */;
+    font-family: Arial, sans-serif; /* kiểu font chữ */
+    text-align: justify; /* canh đều 2 bên justify, left, right, center*/
+    line-height: 1.5; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px*/
+    text-transform: none; /* chuyển chữ thường thành chữ hoa: uppercase lowercase capitalize */
+    text-decoration:none; /* gạch chân chữ: underline line-through overline none*/
+    font-weight: 400; /* độ đậm của chữ: thin light normal medium semi-bold bold (100, 200, ..., 900) */
+    word-spacing: 1px; /* khoảng cách giữa các từ */
+    width: 600px; /* độ rộng của đoạn văn */
+    background-color: #fdfdfd; /* màu nền */
+    border-bottom: 1px solid #000; /* viền dưới */
+}
