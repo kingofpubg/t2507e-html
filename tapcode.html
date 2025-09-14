@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout Cơ Bản</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    main {
+      display: flex;
+      min-height: 400px;
+    }
+    nav {
+      background: #f4f4f4;
+      width: 200px;
+      padding: 15px;
+    }
+    section {
+      flex: 1;
+      padding: 15px;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Header</h1>
+    <p>Menu, logo, thanh tìm kiếm...</p>
+  </header>
+
+  <main>
+    <nav>
+      <h3>Sidebar</h3>
+      <p>Menu trái/phải</p>
+    </nav>
+
+    <section>
+      <h2>Nội dung chính</h2>
+      <p>Đây là nơi hiển thị nội dung web.</p>
+      <p>Tôi đang tập layout cơ bản</p>
+      <ul>
+        <li>123</li>
+        <li>456</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Footer - Thông tin cuối trang</p>
+  </footer>
+</body>
+</html>

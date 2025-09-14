@@ -1,0 +1,19 @@
+.form-group{
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.form-group input{
+    float: left;
+    width: 100%;
+    height: 35px;
+    margin-top 5px; 
+    margin-bottom: 5px;
+    color: red;
+}
+.form-group input[type="email"]{
+    color: green;
+}
+.form-group input[name="Full_name"]{
+    color: blue;
+}

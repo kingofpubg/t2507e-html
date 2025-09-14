@@ -1,0 +1,54 @@
+*{ /* set chung style cho tất cả mọi phần tử */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{ /* set sẵn màu cho hover. link */
+    color: #ad7408;
+}
+body{
+    background-color: #fafafa;
+    color: #444444;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+}
+p{
+    margin-bottom: 0.75rem;
+}
+
+/* layout */
+/* style cho section */
+.section{
+    float:left;
+    width: 100%;
+}
+.container{ /* tạo 1 hộp nội dung giữa các section */
+    float:none;
+    margin-left:auto;
+    margin-right: auto;
+    width: 1200px;
+}
+/* ví dụ điều chỉnh các phần */
+.nav{
+    background-color: #008000ce;
+}
+.nav ul li{
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.nav li a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav ul li.right{
+    float: right;
+}

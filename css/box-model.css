@@ -1,0 +1,39 @@
+/* định vị khối hộp*/
+/* thẻ cha là thẻ chứa nó, ví dụ là div*/
+/* các lệnh này sẽ dùng cố định*/
+div{ 
+    width: calc(25%-42px); /* tính toán chiều rộng thẻ, 25% là 1/4 thẻ cha - 2px của border -20px margin -20px padding ( trái và phải nên x2)*/
+    float: left; /* cho phép các thẻ đứng cạnh nhau*/
+    border: 1px solid rgb(213, 92, 92);
+    margin: 10px; /* khoảng cách giữa các thẻ*/
+    padding: 10px; /* khoảng cách từ viền đến nội dung*/
+    /* margin và padding có thể đặt riêng lẻ cho từng phía*/
+
+    box-sizing: border-box; /* bao gồm cả border và padding vào trong chiều rộng và chiều cao (width)*/
+    /* nếu không có thuộc tính này thì chiều rộng thực tế = width + padding + border*/
+    border-radius: 5px; /*bo tròn các góc thẻ*/
+    background-color: rgb(252, 213, 213); /*màu nền */
+}
+div:hover{
+    background-color: rgb(243, 159, 159); /* màu nền khi di chuột vào thẻ*/
+    /*transform: scale(1.05);/* phóng to thẻ lên 5%*/
+    /*transform: translate(0, -5px); /* dịch chuyển thẻ lên trên 5px*/
+    transform: rotate(10deg); /* xoay thẻ 10 độ*/
+    transition: all 0.3s ease; /* thời gian chuyển đổi hiệu ứng  mượt 0,3s*/
+
+}
+img{
+    max-width: 100%; /* co hình ảnh về kích thước của thẻ nếu vượt quá*/
+}
+.special{ /* class là thuôc tính, special là tên thích đặt gì cx đc */
+    background-color: rgb(149, 44, 44);
+}
+.ott{
+    background-color: green;
+}
+.bg-gray{
+    background-color: gray;
+}
+.bg-white{
+    background-color: white;
+}
