@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs - Have Any Question</title>
+  <link rel="stylesheet" href="css/FAQ.css">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Baker<span>fresh</span></div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="icons">
+      <a href="#"><i class="fas fa-search"></i></a>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#"><i class="fas fa-user"></i></a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="page-header">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>FAQs</h1>
+      <p><a href="index.html">Home</a> / FAQs</p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="faq-container">
+    <h2 class="faq-title">HAVE ANY QUESTION</h2>
+
+    <!-- Search bar -->
+    <div class="faq-search">
+      <input type="text" placeholder="Search Questions...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- Questions -->
+    <div class="faq-item">
+      <button class="faq-question">Có nhận đặt bánh sinh nhật không?</button>
+      <div class="faq-answer">
+        <p>Có, chúng tôi nhận đặt bánh theo yêu cầu trước ít nhất 24h.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Có giao hàng tận nơi không?</button>
+      <div class="faq-answer">
+        <p>Có, áp dụng giao hàng trong bán kính 5km quanh cửa hàng.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Hình thức thanh toán thế nào?</button>
+      <div class="faq-answer">
+        <p>Chúng tôi hỗ trợ tiền mặt, thẻ và chuyển khoản ngân hàng.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col logo-col">
+        <h2>Baker<span>fresh</span></h2>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>CATEGORIES</h4>
+        <ul>
+          <li><a href="#">Cupcake</a></li>
+          <li><a href="#">Pastry</a></li>
+          <li><a href="#">Muffin</a></li>
+          <li><a href="#">Waffle</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>SERVICES</h4>
+        <ul>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Payment</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Latest Post</a></li>
+          <li><a href="#">Selling Tips</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2022 Bakerfresh. Made with ❤ by BootXperts</p>
+    </div>
+  </footer>
+
+  <script>
+    // Accordion mở/đóng
+    const questions = document.querySelectorAll(".faq-question");
+    questions.forEach(q => {
+      q.addEventListener("click", () => {
+        q.classList.toggle("active");
+        const answer = q.nextElementSibling;
+        if (answer.style.maxHeight) {
+          answer.style.maxHeight = null;
+        } else {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
