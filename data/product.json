@@ -1,0 +1,19 @@
+{
+    "name": "Trịnh Phương Thảo",
+    "price": "not for sale",
+    "image": "images/mylove.web.jpg",
+    "description": "25 tủi",
+    "stock": {
+        "qty": 9
+    },
+    "reviews": [
+        {
+            "rate": 1,
+            "review": "siu cấp đáng iu"
+        },
+        {
+            "rate": 2,
+            "review": "siu cấp ngoan xinh"
+        }
+    ]
+}
