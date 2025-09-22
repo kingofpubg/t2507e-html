@@ -76,10 +76,23 @@ var lk= Math.random(); // tạo 1 số thực ngẫu nhiên từ 0 đến 1: 0<l
 lk= lk*100; // 0<lk<100
 lk = parseInt(lk);
 
-var num = prompt("Mời bạn chọn số từ 0 đến 100");
-num = parseInt(num);
-if(num==lk){
-    alert("Chúc mừng bạn đã trúng thưởng");
-}else{
-    alert("Bạn đen như chó");
-}
+//var num = prompt("Mời bạn chọn số từ 0 đến 100");
+//num = parseInt(num);
+//if(num==lk){
+//    alert("Chúc mừng bạn đã trúng thưởng");
+//}else{
+//    alert("Bạn đen như chó");
+//}
+
+//setTimeout(function(){
+//    alert("Hello");
+//    alert("Chào mừng bạn đến với JS");
+//},3000); // 3000ms = 3s
+//var c =10;
+//var bom = setInterval(function(){
+//   alert(c);
+//   c--;
+//   if(c<0){
+//    clearInterval(bom);
+ //  }
+//},1000); // 3000ms = 3s

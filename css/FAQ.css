@@ -11,25 +11,24 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  position: absolute;   /* sửa từ sticky -> absolute */
+  position: absolute;  
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1001;
-  background: transparent;  /* bỏ nền trắng, để trong ảnh */
+  background: transparent;  
   border-bottom: none;
 }
 
 .logo {
   font-size: 26px;
   font-weight: bold;
-  color: #fff;   /* đổi sang trắng để nổi trong ảnh */
+  color: #fff;   
 }
 .logo span {
   color: #e67e22;
@@ -42,7 +41,7 @@ body {
 }
 .nav-links li a {
   text-decoration: none;
-  color: #fff;   /* chữ trắng */
+  color: #fff;  
   font-weight: 500;
   transition: 0.3s;
 }
@@ -52,7 +51,7 @@ body {
 
 .icons a {
   margin-left: 15px;
-  color: #fff;   /* icon trắng */
+  color: #fff;   
   font-size: 18px;
   transition: 0.3s;
 }
@@ -60,7 +59,7 @@ body {
   color: #e67e22;
 }
 
-/* HEADER */
+
 .page-header {
   position: relative;
   width: 100%;
@@ -101,7 +100,7 @@ body {
   text-decoration: underline;
 }
 
-/* MAIN FAQ */
+
 .faq-container {
   max-width: 1000px;
   margin: 50px auto;
@@ -114,7 +113,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* Search bar */
+
 .faq-search {
   display: flex;
   justify-content: center;
@@ -140,7 +139,7 @@ body {
   background: #d35400;
 }
 
-/* FAQ accordion */
+
 .faq-item {
   margin-bottom: 15px;
   border: 1px solid #eee;
@@ -176,7 +175,7 @@ body {
   font-size: 14px;
 }
 
-/* FOOTER */
+
 footer {
   background: #000;
   color: #fff;
@@ -230,7 +229,7 @@ footer {
   color: #e67e22;
 }
 
-/* Footer bottom */
+
 .footer-bottom {
   text-align: center;
   padding-top: 20px;
