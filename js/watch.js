@@ -47,26 +47,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 👉 Danh sách sản phẩm
     const products = [
-      { id: 1, name: "Tissot Classic 1", price: "$450", image: "../images/ts1.webp" },
-      { id: 2, name: "Tissot Classic 2", price: "$480", image: "../images/ts2.webp" },
-      { id: 3, name: "Tissot PRX 1", price: "$520", image: "../images/ts3.webp" },
-      { id: 4, name: "Tissot PRX 2", price: "$550", image: "../images/ts4.webp" },
-      { id: 5, name: "Tissot Seastar 1", price: "$600", image: "../images/ts5.webp" },
-      { id: 6, name: "Tissot Seastar 2", price: "$650", image: "../images/ts6.webp" },
-      { id: 7, name: "Tissot Heritage 1", price: "$700", image: "../images/ts7.webp" },
-      { id: 8, name: "Tissot Heritage 2", price: "$720", image: "../images/ts8.webp" },
-      { id: 9, name: "Tissot Chrono 1", price: "$780", image: "../images/ts9.webp" },
-      { id: 10, name: "Tissot Chrono 2", price: "$800", image: "../images/ts10.webp" },
-      { id: 11, name: "Tissot Gold 1", price: "$950", image: "../images/ts11.jpg" },
-      { id: 12, name: "Tissot Gold 2", price: "$1000", image: "../images/ts12.jpg" },
-      { id: 13, name: "Tissot Pocket 1", price: "$1100", image: "../images/ts13.jpg" },
-      { id: 14, name: "Tissot Pocket 2", price: "$1150", image: "../images/ts14.jpg" },
-      { id: 15, name: "Tissot Sport 1", price: "$500", image: "../images/ts15.jpg" },
-      { id: 16, name: "Tissot Sport 2", price: "$530", image: "../images/ts16.jpg" },
-      { id: 17, name: "Tissot Limited 1", price: "$1500", image: "../images/ts17.jpg" },
-      { id: 18, name: "Tissot Limited 2", price: "$1600", image: "../images/ts18.jpg" },
-      { id: 19, name: "Tissot Exclusive 1", price: "$2000", image: "../images/ts19.jpg" },
-      { id: 20, name: "Tissot Exclusive 2", price: "$2200", image: "../images/ts20.jpg" }
+      { id: 1, name: "Tissot Classic 1", price: "$450", image: "images/ts1.webp" },
+      { id: 2, name: "Tissot Classic 2", price: "$480", image: "images/ts2.webp" },
+      { id: 3, name: "Tissot PRX 1", price: "$520", image: "images/ts3.webp" },
+      { id: 4, name: "Tissot PRX 2", price: "$550", image: "images/ts4.webp" },
+      { id: 5, name: "Tissot Seastar 1", price: "$600", image: "images/ts5.webp" },
+      { id: 6, name: "Tissot Seastar 2", price: "$650", image: "images/ts6.webp" },
+      { id: 7, name: "Tissot Heritage 1", price: "$700", image: "images/ts7.webp" },
+      { id: 8, name: "Tissot Heritage 2", price: "$720", image: "images/ts8.webp" },
+      { id: 9, name: "Tissot Chrono 1", price: "$780", image: "images/ts9.webp" },
+      { id: 10, name: "Tissot Chrono 2", price: "$800", image: "images/ts10.webp" },
+      { id: 11, name: "Tissot Gold 1", price: "$950", image: "images/ts11.jpg" },
+      { id: 12, name: "Tissot Gold 2", price: "$1000", image: "images/ts12.jpg" },
+      { id: 13, name: "Tissot Pocket 1", price: "$1100", image: "images/ts13.jpg" },
+      { id: 14, name: "Tissot Pocket 2", price: "$1150", image: "images/ts14.jpg" },
+      { id: 15, name: "Tissot Sport 1", price: "$500", image: "images/ts15.jpg" },
+      { id: 16, name: "Tissot Sport 2", price: "$530", image: "images/ts16.jpg" },
+      { id: 17, name: "Tissot Limited 1", price: "$1500", image: "images/ts17.jpg" },
+      { id: 18, name: "Tissot Limited 2", price: "$1600", image: "images/ts18.jpg" },
+      { id: 19, name: "Tissot Exclusive 1", price: "$2000", image: "images/ts19.jpg" },
+      { id: 20, name: "Tissot Exclusive 2", price: "$2200", image: "images/ts20.jpg" }
     ];
 
     const product = products.find(p => p.id === id);
