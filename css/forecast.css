@@ -1,0 +1,27 @@
+body {
+  background-image: url("../images/jangwy.jpg");
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.card {
+  width: 250px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}

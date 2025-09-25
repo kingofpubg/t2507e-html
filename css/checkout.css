@@ -1,0 +1,142 @@
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px; /* trái: form, phải: summary */
+  gap: 32px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 48px auto;
+  align-items: start;
+}
+
+/* Form box (trái) */
+.checkout-box {
+  background: #fff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* Tiêu đề */
+.checkout-box h1 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  color: #111;
+  text-align: left;
+}
+
+/* Form fields */
+.checkout-box label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #222;
+}
+
+.checkout-box input,
+.checkout-box select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fafafa;
+}
+
+.checkout-box input:focus,
+.checkout-box select:focus {
+  outline: none;
+  border-color: #999;
+  box-shadow: 0 0 6px rgba(0,0,0,0.04);
+}
+
+/* nút xác nhận */
+.checkout-box .btn {
+  margin-top: 22px;
+  width: 100%;
+  padding: 14px;
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+.checkout-box .btn:hover { background: #d40000; }
+
+/* Summary card (phải) */
+.summary-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+  text-align: center;
+}
+
+/* ảnh sản phẩm */
+.summary-card .product-img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* thông tin */
+.summary-card h3 {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #111;
+}
+.summary-card .price {
+  color: #d40000;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.summary-card .qty {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+/* small button (quay về) */
+.summary-card .btn.small {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #000;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.summary-card .btn.small:hover { background: #d40000; }
+
+/* Nếu không có sản phẩm */
+.summary-card .empty {
+  padding: 10px 6px;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .checkout-grid {
+    grid-template-columns: 1fr 320px;
+    gap: 20px;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .checkout-grid {
+    grid-template-columns: 1fr;
+    padding: 0 12px;
+    margin: 20px auto;
+  }
+
+  .summary-card {
+    margin-top: 18px;
+  }
+}
+
+/* Tương thích với style nút chung */
+.btn { transition: background .2s ease; }

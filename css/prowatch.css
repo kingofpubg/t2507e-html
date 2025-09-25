@@ -1,0 +1,303 @@
+/* RESET + BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* container chung */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* ================= HEADER ================= */
+header.section.header {
+  background: #000;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+}
+
+.brand.header,
+.brand.search {
+  flex: 1;
+}
+
+.brand.header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.brand.header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.brand.logo {
+  flex: 0;
+  text-align: center;
+}
+
+.brand.logo img {
+  height: 60px;
+}
+
+.brand.search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.brand.search input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* icon nhỏ */
+.account.logo-mini a img {
+  height: 22px;
+  margin-left: 10px;
+}
+
+/* ================= NAV ================= */
+nav.section.nav {
+  background: #fff;
+  border-bottom: 2px solid #eee;
+}
+
+nav .container {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 14px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d40000;
+}
+
+.line {
+  display: block;
+  height: 2px;
+  background: #d40000;
+  margin-top: 5px;
+}
+
+/* ================= PRODUCT LIST ================= */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  background: #fff;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: #d40000;
+}
+
+.product-card .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 18px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.product-card .btn:hover {
+  background: #d40000;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ================= DETAIL PAGE ================= */
+.detail-card {
+  display: flex;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.detail-card img {
+  width: 45%;
+  border-radius: 10px;
+}
+
+.detail-card .info {
+  flex: 1;
+}
+
+.detail-card h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.detail-card .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d40000;
+  margin-bottom: 15px;
+}
+
+.detail-card .desc {
+  margin-bottom: 20px;
+}
+
+.detail-card .btn {
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.detail-card .btn:hover {
+  background: #d40000;
+}
+
+/* ================= FOOTER ================= */
+footer.section.footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer h4 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: #aaa;
+}
+
+/* email/subscribe */
+.foot-sendemail h2 {
+  margin-bottom: 12px;
+}
+
+.foot-sendemail input {
+  padding: 8px;
+  width: 70%;
+  margin-right: 6px;
+  border: none;
+  border-radius: 4px;
+}
+
+.foot-sendemail button {
+  padding: 8px 14px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.foot-sendemail button:hover {
+  background: #d40000;
+  color: #fff;
+}
+
+.foot-sendemail .logo img {
+  height: 24px;
+  margin: 10px 6px 0 0;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .product-list { grid-template-columns: repeat(2, 1fr); }
+  .detail-card { flex-direction: column; text-align: center; }
+  .detail-card img { width: 100%; }
+  footer .container { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .product-list { grid-template-columns: 1fr; }
+  footer .container { grid-template-columns: 1fr; }
+  header .container { padding: 12px 16px; }
+  nav ul { gap: 18px; }
+}
