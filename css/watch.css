@@ -19,7 +19,7 @@ body {
   padding: 0 20px;
 }
 
-/* HEADER (theo CSS bạn gửi) */
+/* HEADER  */
 header.section.header {
   background: #000;
   color: #fff;
@@ -114,7 +114,7 @@ nav ul li a:hover {
   margin-top: 5px;
 }
 
-/* (GIỮ NGUYÊN) phần search chính - ở giữa body */
+
 section.search-section {
   text-align: center;
   margin: 30px 0;
@@ -127,7 +127,7 @@ section.search-section {
   border-radius: 5px;
 }
 
-/* PRODUCT GRID: 4 cột cố định -> 5 hàng khi có 20 item */
+/* PRODUCT GRID: 4 cột cố định -> 5 hàng khi có 20 ảnh */
 .product-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -151,7 +151,7 @@ section.search-section {
   cursor: pointer;
 }
 
-/* hover effect (sang trọng) */
+/* hover effect  */
 .product-card:hover {
   transform: translateY(-8px);
   background: #c7dfed;
@@ -190,7 +190,7 @@ section.search-section {
   background: #d40000;
 }
 
-/* FOOTER (theo CSS bạn gửi) */
+/* FOOTER  */
 footer.section.footer {
   background: #000;
   color: #fff;

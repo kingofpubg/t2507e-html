@@ -1,4 +1,4 @@
-/* RESET + BASE */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ body {
   padding: 0 20px;
 }
 
-/* ================= HEADER ================= */
+/*  HEADER  */
 header.section.header {
   background: #000;
   color: #fff;
@@ -79,7 +79,7 @@ header .container {
   margin-left: 10px;
 }
 
-/* ================= NAV ================= */
+/*  NAV  */
 nav.section.nav {
   background: #fff;
   border-bottom: 2px solid #eee;
@@ -115,7 +115,7 @@ nav ul li a:hover {
   margin-top: 5px;
 }
 
-/* ================= PRODUCT LIST ================= */
+/* PRODUCT LIST */
 .product-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -171,7 +171,7 @@ nav ul li a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* ================= DETAIL PAGE ================= */
+/*  DETAIL PAGE */
 .detail-card {
   display: flex;
   gap: 30px;
@@ -221,7 +221,7 @@ nav ul li a:hover {
   background: #d40000;
 }
 
-/* ================= FOOTER ================= */
+/*  FOOTER  */
 footer.section.footer {
   background: #000;
   color: #fff;
@@ -287,7 +287,7 @@ footer a:hover {
   margin: 10px 6px 0 0;
 }
 
-/* ================= RESPONSIVE ================= */
+/*  RESPONSIVE  */
 @media (max-width: 900px) {
   .product-list { grid-template-columns: repeat(2, 1fr); }
   .detail-card { flex-direction: column; text-align: center; }
