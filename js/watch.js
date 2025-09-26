@@ -79,19 +79,28 @@ document.addEventListener("DOMContentLoaded", () => {
             <h2>${product.name}</h2>
             <p class="price">${product.price}</p>
             <p class="desc">This is a high-quality ${product.name} watch.</p>
+
             <button id="addToCartBtn" class="btn">Add to Cart</button>
             <a href="watch.html" class="btn back-btn">⬅ Back</a>
+
+            <!-- Chi tiết sản phẩm nằm dưới nút -->
+            <div class="product-details">
+              <h3>Chi tiết sản phẩm:</h3>
+              <ul class="product-specs">
+                <li><strong>Xuất xứ:</strong> ${product.origin || "Thụy Sĩ"}</li>
+                <li><strong>Năm sản xuất:</strong> ${product.year || "2025"}</li>
+                <li><strong>Chất liệu:</strong> ${product.material || "Thép không gỉ"}</li>
+                <li><strong>Thông số:</strong> ${product.specs || "Đường kính 40mm, Chống nước 50m"}</li>
+                <li><strong>Số lượng tồn:</strong> ${product.stock || "10"}</li>
+              </ul>
+            </div>
           </div>
         </div>
       `;
 
-      // === Xử lý nút Add to Cart ===
       const addToCartBtn = document.getElementById("addToCartBtn");
       addToCartBtn.addEventListener("click", () => {
-        // Lưu sản phẩm chọn vào localStorage (chỉ 1 sản phẩm)
         localStorage.setItem("selectedProduct", JSON.stringify(product));
-
-        // chuyển sang checkout page
         window.location.href = "checkout.html";
       });
     } else {
