@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // =========================
-  // 🛒 Hiển thị chi tiết sản phẩm (chỉ chạy ở trang prowatch.html)
+  // Hiển thị chi tiết sản phẩm (chỉ chạy ở trang prowatch.html)
   // =========================
   if (detailContainer) {
     const params = new URLSearchParams(window.location.search);

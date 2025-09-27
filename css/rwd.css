@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+.item{
+    float: left;
+    margin: 10px;
+    width: calc(25% - 20px);
+}
+
+@media screen and (max-width : 992px) and (min-width : 560px){
+    .item{
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width : 560px){
+    .item{
+        width: calc(100% - 20px);
+    }
+
+}
+    
