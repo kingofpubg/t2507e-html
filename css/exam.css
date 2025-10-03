@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+header nav a:hover {
+    color: #007bff;
+}
+header .search-box input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+main {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+aside.genres {
+    width: 20%;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+aside label {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+section.content {
+    width: 80%;
+    padding: 20px;
+}
+section .video {
+    text-align: center;
+    margin-bottom: 20px;
+}
+section .movie-description {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.movie-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    background: #fafafa;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 280px; 
+}
+
+
+.movie-card img {
+    width: 100%;
+    height: 160px;        
+    object-fit: contain;  
+    border-radius: 8px;
+    background: #fff;     
+}
+
+
+.movie-card p {
+    margin: 8px 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+
+    
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.stars {
+    color: gold;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    color: #555;
+}
