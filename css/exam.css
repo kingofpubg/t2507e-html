@@ -78,7 +78,7 @@ section .movie-description {
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    background: #fafafa;
+    background: #bacdf1;
 
     
     display: flex;
@@ -123,6 +123,21 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #0d41df;
     color: #555;
+}
+
+.movie-card {
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.movie-card:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
